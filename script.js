@@ -6,7 +6,7 @@ button.addEventListener("click",()=>{
   fetch(apiUrl)
   .then(response=> response.json())
         .then(data=>{
-        //  let random = Math.random ()*"${data.joke}";
+
         joke.innerHTML=`<p>${data.joke}</p>`;
         });
 });
